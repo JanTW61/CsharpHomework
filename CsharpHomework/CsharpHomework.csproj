@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B904BCE-4CE0-42A4-87A9-DC923AB75918}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CsharpHomework</RootNamespace>
+    <AssemblyName>CsharpHomework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="drawer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drawer.Designer.cs">
+      <DependentUpon>drawer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screensavers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screensavers.Designer.cs">
+      <DependentUpon>screensavers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="masterfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterfrm.Designer.cs">
+      <DependentUpon>masterfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCul.Designer.cs">
+      <DependentUpon>MyCul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pos.Designer.cs">
+      <DependentUpon>pos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loanReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loanReport.Designer.cs">
+      <DependentUpon>loanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCulculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCulculate.Designer.cs">
+      <DependentUpon>frmCulculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sayhihello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sayhihello.Designer.cs">
+      <DependentUpon>sayhihello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentGrades.Designer.cs">
+      <DependentUpon>StudentGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentGrades_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentGrades_list.Designer.cs">
+      <DependentUpon>studentGrades_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Structform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Structform.Designer.cs">
+      <DependentUpon>Student_Structform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XOGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XOGame.Designer.cs">
+      <DependentUpon>XOGame.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="drawer.resx">
+      <DependentUpon>drawer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screensavers.resx">
+      <DependentUpon>screensavers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterfrm.resx">
+      <DependentUpon>masterfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCul.resx">
+      <DependentUpon>MyCul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pos.resx">
+      <DependentUpon>pos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCulculate.resx">
+      <DependentUpon>frmCulculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loanReport.resx">
+      <DependentUpon>loanReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sayhihello.resx">
+      <DependentUpon>sayhihello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StudentGrades.resx">
+      <DependentUpon>StudentGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentGrades_list.resx">
+      <DependentUpon>studentGrades_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Structform.resx">
+      <DependentUpon>Student_Structform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XOGame.resx">
+      <DependentUpon>XOGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aprilia RSV4 by LandinDesign on DeviantArt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hello.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Petronas Logo - Download Free Vector PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovepik-computer-png-image_401282893_wh1200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pub.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bber.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
