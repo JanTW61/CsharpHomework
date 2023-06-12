@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(masterfrm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnDrawer = new System.Windows.Forms.Button();
             this.btnStuGrade = new System.Windows.Forms.Button();
             this.btnXOGame = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.btnHellHi = new System.Windows.Forms.Button();
             this.btnCul = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnScrSav = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -55,6 +57,8 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Turquoise;
+            this.splitContainer1.Panel1.Controls.Add(this.btnScrSav);
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.btnDrawer);
             this.splitContainer1.Panel1.Controls.Add(this.btnStuGrade);
             this.splitContainer1.Panel1.Controls.Add(this.btnXOGame);
@@ -74,6 +78,21 @@
             this.splitContainer1.SplitterDistance = 176;
             this.splitContainer1.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Navy;
+            this.button1.Location = new System.Drawing.Point(15, 542);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 32);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "猜數字";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnDrawer
             // 
             this.btnDrawer.AutoSize = true;
@@ -81,7 +100,7 @@
             this.btnDrawer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDrawer.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDrawer.ForeColor = System.Drawing.Color.Navy;
-            this.btnDrawer.Location = new System.Drawing.Point(15, 514);
+            this.btnDrawer.Location = new System.Drawing.Point(15, 482);
             this.btnDrawer.Name = "btnDrawer";
             this.btnDrawer.Size = new System.Drawing.Size(110, 32);
             this.btnDrawer.TabIndex = 7;
@@ -96,7 +115,7 @@
             this.btnStuGrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStuGrade.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStuGrade.ForeColor = System.Drawing.Color.Navy;
-            this.btnStuGrade.Location = new System.Drawing.Point(15, 450);
+            this.btnStuGrade.Location = new System.Drawing.Point(15, 418);
             this.btnStuGrade.Name = "btnStuGrade";
             this.btnStuGrade.Size = new System.Drawing.Size(110, 32);
             this.btnStuGrade.TabIndex = 6;
@@ -111,7 +130,7 @@
             this.btnXOGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnXOGame.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXOGame.ForeColor = System.Drawing.Color.Navy;
-            this.btnXOGame.Location = new System.Drawing.Point(15, 390);
+            this.btnXOGame.Location = new System.Drawing.Point(15, 358);
             this.btnXOGame.Name = "btnXOGame";
             this.btnXOGame.Size = new System.Drawing.Size(110, 32);
             this.btnXOGame.TabIndex = 5;
@@ -126,7 +145,7 @@
             this.btnStruct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStruct.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStruct.ForeColor = System.Drawing.Color.Navy;
-            this.btnStruct.Location = new System.Drawing.Point(15, 318);
+            this.btnStruct.Location = new System.Drawing.Point(15, 286);
             this.btnStruct.Name = "btnStruct";
             this.btnStruct.Size = new System.Drawing.Size(110, 32);
             this.btnStruct.TabIndex = 4;
@@ -141,7 +160,7 @@
             this.btnPOS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPOS.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPOS.ForeColor = System.Drawing.Color.Navy;
-            this.btnPOS.Location = new System.Drawing.Point(15, 248);
+            this.btnPOS.Location = new System.Drawing.Point(15, 216);
             this.btnPOS.Name = "btnPOS";
             this.btnPOS.Size = new System.Drawing.Size(110, 32);
             this.btnPOS.TabIndex = 3;
@@ -156,7 +175,7 @@
             this.btnMycul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMycul.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMycul.ForeColor = System.Drawing.Color.Navy;
-            this.btnMycul.Location = new System.Drawing.Point(15, 182);
+            this.btnMycul.Location = new System.Drawing.Point(15, 150);
             this.btnMycul.Name = "btnMycul";
             this.btnMycul.Size = new System.Drawing.Size(110, 32);
             this.btnMycul.TabIndex = 2;
@@ -171,7 +190,7 @@
             this.btnHellHi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHellHi.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHellHi.ForeColor = System.Drawing.Color.Navy;
-            this.btnHellHi.Location = new System.Drawing.Point(15, 114);
+            this.btnHellHi.Location = new System.Drawing.Point(15, 82);
             this.btnHellHi.Name = "btnHellHi";
             this.btnHellHi.Size = new System.Drawing.Size(110, 32);
             this.btnHellHi.TabIndex = 1;
@@ -186,7 +205,7 @@
             this.btnCul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCul.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCul.ForeColor = System.Drawing.Color.Navy;
-            this.btnCul.Location = new System.Drawing.Point(15, 50);
+            this.btnCul.Location = new System.Drawing.Point(15, 18);
             this.btnCul.Name = "btnCul";
             this.btnCul.Size = new System.Drawing.Size(110, 32);
             this.btnCul.TabIndex = 0;
@@ -206,6 +225,21 @@
             this.label1.Size = new System.Drawing.Size(230, 76);
             this.label1.TabIndex = 0;
             this.label1.Text = "C#作業";
+            // 
+            // btnScrSav
+            // 
+            this.btnScrSav.AutoSize = true;
+            this.btnScrSav.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnScrSav.BackgroundImage")));
+            this.btnScrSav.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnScrSav.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScrSav.ForeColor = System.Drawing.Color.Navy;
+            this.btnScrSav.Location = new System.Drawing.Point(15, 593);
+            this.btnScrSav.Name = "btnScrSav";
+            this.btnScrSav.Size = new System.Drawing.Size(133, 32);
+            this.btnScrSav.TabIndex = 9;
+            this.btnScrSav.Text = "螢幕保護程式";
+            this.btnScrSav.UseVisualStyleBackColor = true;
+            this.btnScrSav.Click += new System.EventHandler(this.btnScrSav_Click);
             // 
             // masterfrm
             // 
@@ -241,5 +275,7 @@
         private System.Windows.Forms.Button btnStuGrade;
         private System.Windows.Forms.Button btnDrawer;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnScrSav;
     }
 }

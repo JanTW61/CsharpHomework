@@ -93,6 +93,16 @@ namespace CsharpHomework.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap lol {
+            get {
+                object obj = ResourceManager.GetObject("lol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap lovepik_computer_png_image_401282893_wh1200 {
             get {
                 object obj = ResourceManager.GetObject("lovepik-computer-png-image_401282893_wh1200", resourceCulture);
