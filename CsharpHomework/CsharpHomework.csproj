@@ -52,11 +52,23 @@
     <Compile Include="drawer.Designer.cs">
       <DependentUpon>drawer.cs</DependentUpon>
     </Compile>
-    <Compile Include="screensavers.cs">
+    <Compile Include="guessGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="screensavers.Designer.cs">
-      <DependentUpon>screensavers.cs</DependentUpon>
+    <Compile Include="guessGame.Designer.cs">
+      <DependentUpon>guessGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guessingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guessingFrm.Designer.cs">
+      <DependentUpon>guessingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screenSaver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screenSaver.Designer.cs">
+      <DependentUpon>screenSaver.cs</DependentUpon>
     </Compile>
     <Compile Include="masterfrm.cs">
       <SubType>Form</SubType>
@@ -123,8 +135,11 @@
     <EmbeddedResource Include="drawer.resx">
       <DependentUpon>drawer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="screensavers.resx">
-      <DependentUpon>screensavers.cs</DependentUpon>
+    <EmbeddedResource Include="guessGame.resx">
+      <DependentUpon>guessGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guessingFrm.resx">
+      <DependentUpon>guessingFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="masterfrm.resx">
       <DependentUpon>masterfrm.cs</DependentUpon>
@@ -154,6 +169,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="screenSaver.resx">
+      <DependentUpon>screenSaver.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentGrades.resx">
       <DependentUpon>StudentGrades.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +230,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bber.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

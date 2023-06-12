@@ -16,7 +16,7 @@ namespace CsharpHomework
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new screensavers());
+            Application.Run(new masterfrm());
         }
     }
 }

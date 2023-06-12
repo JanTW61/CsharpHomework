@@ -90,5 +90,18 @@ namespace CsharpHomework
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Guessfrm guessfrm = new Guessfrm();
+            openfrm(guessfrm);
+        }
+
+        private void btnScrSav_Click(object sender, EventArgs e)
+        {
+            screenSaver screenSaver = new screenSaver();
+            screenSaver.Show();
+            
+        }
     }
 }
