@@ -27,7 +27,7 @@ namespace CsharpHomework
         {
             bool isnum=int.TryParse(textBox1.Text.ToString(), out guessnum);
             
-            if (isnum && guessnum<100)
+            if (isnum && guessnum<100 && guessnum> Guessfrm.tmplow &&guessnum<Guessfrm.tmphigh)
             {
                 if (guessnum > Guessfrm.rndNum)
                 {
